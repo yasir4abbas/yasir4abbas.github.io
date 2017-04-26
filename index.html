@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Y4A</title>
-
-        <!-- Fonts -->
+<html>
+<head>
+    <title>Y4A | BOLT</title>
+    <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <!-- Loading Flat UI -->
         <link href="css/flat-ui.css" rel="stylesheet">
@@ -24,17 +19,8 @@
                 margin: 0;
             }
 
-            a {
-                color: white;
-                text-decoration: none !important;
-            }
-
-            a:hover {
-                color: white;
-            }
-
             header {
-            	box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+                box-shadow: 0 14px 28px rgba(0,0,0,0.1);
             }
 
             span {
@@ -47,19 +33,13 @@
                 color: #fff;
             }
 
-            .card {
-                border-radius: 0 0 2px 2px;
-                width: 100%;
-                height: 180px;
-                margin-top: 12px;
-                background-color: #fff;
-                position: relative;
-            }
-
             .card-1 {
-                  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                }
+                width: 480px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            }
 
             .card-1:hover {
               box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -91,10 +71,21 @@
 
             .content {
                 text-align: center;
+                height: 100%;
             }
 
             .title {
-                font-size: 84px;
+                padding-top: 4%;
+                height: inherit;
+                font-size: 64px;
+            }
+
+            .desc {
+                height: inherit;
+            }
+
+            .p2 {
+                background-color: #efefef;
             }
 
             .links > a {
@@ -107,10 +98,6 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
             ul.horizontal {
                 list-style-type: none;
                 margin: 0;
@@ -118,57 +105,85 @@
                 overflow: hidden;
                 background-color: #333;
             }
+
+            .col-md-6 {
+                height: 100%;
+            }
+
+            .info {
+                height: 480px;
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 1000px) {
+                .info {
+                    height: inherit;
+                    min-height: 480px;
+                }
+            }
         </style>
+</head>
+<body>
     </head>
-    <body style="background: url(images/site_background.jpg);">
-        <header>
-            <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-3">
-            <span class="sr-only">Toggle navigation</span>
-          </button>
-          <a class="navbar-brand" href="#">Y4A</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-3">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">About Me</a></li>
-            <!-- <li><a href="#">Clients</a></li> -->
-           </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-        </header>
-        <div class="container">
-            <div class="flex-center position-ref full-height col-md-8">
-                <div class="content">
-                    <div class="title m-b-md">
-                        BOLT
+    <body>
+        <div class="" style="background-color: white;">
+            <div class="info">
+                <div class="content flex-center col-md-12">
+                    <div class="title">
+                        <div>
+                            <img height="150px" src="images/image.png">
+                        </div>
+                        Yasir Abbas
+                        <p>Mobile Developer & Engineer</p>
+                        <p><a href="#">@yasir4abbas</a></p>
                     </div>
-                    <p>Passionate Android | iOS Devloper and Engineer.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card card-1" >
-                    <!-- <img src="https://images4.alphacoders.com/182/thumb-1920-182834.jpg"
-                    style="width: 100%; height: 100%; position: absolute; left:0px; right: 0px; bottom: 0px;"> -->
-                    <div style=" position:absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.37); "></div>
-                    <h4 align="center" style="position: absolute; width: 100%; line-height: 5;
-					    font-weight: bold;
-					    font-size: 30px;">ANIMEJUNC</h4>
 
+                <div class="info p2 container">
+                    <div class="col-md-6">
+                        <div class="title">
+                            Anime Junc
+                            <p>Follow your favourite anime and add them to your watchlist. Search your favourite anime or look at the current top animated tv shows of the season. <br>Demo app implementing AniList APIs and using Realm, RxJava to handle asysnchronous calls and follows the material design guidlines for UI/UX.</p>
+
+                            <img height="12%" width="8%" src="images/rxjava.png">
+                            <img height="12%" width="8%" src="images/realm.png">
+                            <img height="12%" width="8%" src="images/al.png"><br>
+                            <a href="https://play.google.com/store/apps/details?id=com.bolt.animejunc">
+                            <img height="12%" width="25%" src="images/play_store.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="desc">
+                            <img height="95%" width="44%" src="images/junc/home.png">
+                            <img height="110%" width="50%" src="images/junc/view.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="card card-1" >
-                    <a href="https://yasir4abbas.github.io/beseato">
-                    <!-- <img src="http://www.wallpaperdx.com/photo/school-bus-wallpaper-1280-800.jpg"
-                    style="width: 100%; height: 100%; position: absolute; left:0px; right: 0px; bottom: 0px;"> -->
-                    <div style=" position:absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.37); "></div>
-                    <h4 align="center" style="position: absolute; width: 100%; line-height: 5;
-					    font-weight: bold;
-					    font-size: 30px;">DRACO</h4></a>
+
+                <div class="info container">
+                    <div class="col-md-6">
+                        <div class="desc">
+                            <img height="110%" width="50%" src="images/draco/screen1.png">
+                            <img height="95%" width="44%" src="images/draco/iphone7.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="title">
+                            BeSeat'O
+                            <p>Bus seat reservation app for beaconhouse National University, Alpha Stage. </p>
+                            <img height="12%" width="8%" src="images/firebase.png"><br>
+                            <img height="10%" width="50%" src="images/coming_soon.png">
+                        </div>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="info p2 container">
+                </div>
+
+                <div class="info container">
+                </div>
         </div>
-    </body>
+</body>
 </html>
