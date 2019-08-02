@@ -1,194 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Y4A | BOLT</title>
-    <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <!-- Loading Flat UI -->
-        <link href="css/flat-ui.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #efefef;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            header {
-                box-shadow: 0 14px 28px rgba(0,0,0,0.1);
-            }
-
-            span {
-                font-size: 18px;
-                color: #fff;
-                margin: 12px;
-            }
-
-            h4 {
-                color: #fff;
-            }
-
-            .card-1 {
-                width: 480px;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-            }
-
-            .card-1:hover {
-              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-            }
-
-            .navbar {
-                  margin-bottom: 20px;
-              }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-                height: 100%;
-            }
-
-            .title {
-                padding-top: 4%;
-                height: inherit;
-                font-size: 64px;
-            }
-
-            .desc {
-                height: inherit;
-            }
-
-            .p2 {
-                background-color: #efefef;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            ul.horizontal {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-
-            .col-md-6 {
-                height: 100%;
-            }
-
-            .info {
-                height: 480px;
-                width: 100%;
-            }
-
-            @media only screen and (max-width: 1000px) {
-                .info {
-                    height: inherit;
-                    min-height: 480px;
-                }
-            }
-        </style>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<title>Y4A Reloaded</title>
 </head>
 <body>
-    </head>
-    <body>
-        <div class="" style="background-color: white;">
-            <div class="info">
-                <div class="content flex-center col-md-12">
-                    <div class="title">
-                        <div>
-                            <img height="150px" src="images/image.png" style="
-    border-radius: 50%;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border: 4px solid #efefef;
-">
-                        </div>
-                        Yasir Abbas
-                        <p>Mobile Developer & Engineer</p>
-                        <p><a href="https://twitter.com/yasir4abbas">@yasir4abbas</a></p>
-                    </div>
-                </div>
-            </div>
-
-                <div class="info p2 container">
-                    <div class="col-md-6">
-                        <div class="title">
-                            Anime Junc
-                            <p>Follow your favourite anime and add them to your watchlist. Search your favourite anime or look at the current top animated tv shows of the season. <br>Demo app implementing AniList APIs and using Realm, RxJava to handle asysnchronous calls and follows the material design guidlines for UI/UX.</p>
-
-                            <img height="12%" width="8%" src="images/rxjava.png">
-                            <img height="12%" width="8%" src="images/realm.png">
-                            <img height="12%" width="8%" src="images/al.png"><br>
-                            <a href="https://play.google.com/store/apps/details?id=com.bolt.animejunc">
-                            <img height="12%" width="25%" src="images/play_store.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="desc">
-                            <img height="95%" width="42%"  style="margin-top: -15%;" src="images/junc/home.png">
-                            <img height="130%" width="55%"  style="margin-top: -15%;" src="images/junc/view.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info container">
-                    <div class="col-md-6">
-                        <div class="desc">
-                            <img height="130%" width="55%"  style="margin-top: -15%;" src="images/draco/screen1.png">
-                            <img height="95%" width="42%"  style="margin-top: -15%;" src="images/draco/iphone7.png">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="title">
-                            BeSeat'O
-                            <p>Bus seat reservation app for beaconhouse National University, Alpha Stage. </p>
-                            <img height="12%" width="8%" src="images/firebase.png"><br>
-                            <img height="10%" width="50%" src="images/coming_soon.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="info p2 container">
-                </div>
-
-                <div class="info container">
-                    <h2>Follow me at the </h2>
-                </div>
-        </div>
+	<div class="container">
+		<div class="intro row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-sm-3" style="text-align: center;">
+						<img class="profile-img" style="margin-top: 12%;" src="images/profile.png" width="106px" height="106px">
+					</div>
+					<div class="col-sm-9" style="padding: 0px;">
+						<h1>Yasir Abbas</h1>
+						<h6>Software Developer</h6>
+					</div>
+				</div>
+				<hr>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<img src="images/twitter.png" width="24px" height="24px">
+				<a class="highlight" href="#">@yasir4abbas</a>
+				<img style="padding: 2px;" src="images/email.png" width="24px" height="24px">
+				<span class="highlight">yasir4abas@gmail.com </span>
+				<a href="#"><img src="images/linkedin.png" width="24px" height="24px"></a>
+			</div>
+		</div>
+		<div class="projects row">
+			<div class="col-md-12">
+				<h4>Projects</h4>
+			</div>
+			<div class="col-md-4 prj">
+				<a href="projects/andromeda.html">
+					<img src="images/prj-and.png">
+				</a>
+			</div>
+			<div class="col-md-4 prj">
+				<a href="projects/anijunc.html">
+					<img src="images/prj-anj.png">
+				</a>
+			</div>
+			<div class="col-md-4 prj">
+				<a href="#">
+					<img src="images/prj-vac.png">
+				</a>
+			</div>
+			<div class="col-md-4 prj">
+				<a href="#">
+					<img src="images/prj-bst.png">
+				</a>
+			</div>
+		</div>
+		<div class="projects row">
+			<div class="col-md-12">
+				<h4>Technologies</h4>
+			</div>
+			<div class="col-md-4 stk">
+				<div href="#">
+					<h2>Management Tools</h2>
+					<hr>
+					<img src="images/trello.png" width="56px" height="56px">
+					<img src="images/git.png" width="56px" height="56px">
+					<img src="images/office.png" width="56px" height="56px">
+				</div>
+			</div>
+			<div class="col-md-4 stk">
+				<div href="#">
+					<h2>Moble Development</h2>
+					<hr>
+					<img src="images/and.png" width="56px" height="56px">
+					<img src="images/javva.png" width="56px" height="56px"><br>
+					<img src="images/ios.png" width="56px" height="56px">
+					<img src="images/swift.png" width="56px" height="56px">
+				</div>
+			</div>
+			<div class="col-md-4 stk">
+				<div href="#">
+					<h2>Web Development</h2>
+					<hr>
+					<img src="images/laravel.png" width="56px" height="56px">
+					<img src="images/igniter.png" width="42px" height="52px">
+				</div>
+			</div>
+			<div class="col-md-4 stk">
+				<div href="#">
+					<h2>Design Tools</h2>
+					<hr>
+					<img src="images/figma.png" width="38px" height="48px">
+					<img src="images/sketch.png" width="56px" height="56px">
+				</div>
+			</div>
+		</div>
+		<footer>
+			This is footer
+		</footer>
+	</div>
 </body>
 </html>
