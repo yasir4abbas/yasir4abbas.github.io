@@ -106,3 +106,7 @@ h6 {
 a:hover {
 	text-decoration: none;
 }
+
+footer {
+	height: 80px;
+}
