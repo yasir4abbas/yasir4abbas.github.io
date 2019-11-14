@@ -107,6 +107,23 @@ a:hover {
 	text-decoration: none;
 }
 
+.btn {
+	margin-top: 8px;
+}
+
+header {
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 9000;
+	background-color: white;
+	transition: all 0.5s linear;
+}
+
 footer {
 	height: 80px;
+}
+
+#header.active {
+     box-shadow: 0 0 10px rgba(0,0,0,0.4);   
 }

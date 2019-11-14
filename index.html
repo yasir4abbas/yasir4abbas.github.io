@@ -4,10 +4,16 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<title>Y4A Reloaded</title>
 </head>
 <body>
-	<div class="container">
+	<header id="header">
+		<div class="container">
+			<img style="margin-top: 8px;" src="images/icons/logo.png" width="72px" height="72px">
+		</div>
+	</header>
+	<div class="container" style="padding-top: 80px;">
 		<div class="intro row">
 			<div class="col-lg-6 col-sm-9">
 				<div class="row">
@@ -16,16 +22,19 @@
 					</div>
 					<div class="col-sm-9" style="padding: 0px;">
 						<h1>Yasir Abbas</h1>
-						<h6>Software Engineer</h6>
+						<h6>Software Engineer, Android Dev</h6>
 					</div>
 				</div>
 				<hr>
-				<p>I am a huge tech enthusiast & am very hard working when working on upcoming technologies, Thinking critically on the engineering and the business goals of the product, in vein to make the product best for the consumer and the buisness. Love to innovate and build on futuristic technologies that can have a meanigful and a new way of impacting the lifestyle.<br></p>
+				<p>I am a Tech enthusiast with interest in working on upcoming technologies, Thinking critically on the engineering and the business goals of the product, in vein to make the product best for the consumer and the business. Love to innovate and build on futuristic technologies that can have a meaningful and a new way of impacting the lifestyle.<br></p>
 				<img src="images/twitter.png" width="24px" height="24px">
-				<a class="highlight" href="#">@yasir4abbas</a>
+				<a class="highlight" href="https://twitter.com/yasir4abbas">@yasir4abbas</a>
 				<img style="padding: 2px;" src="images/email.png" width="24px" height="24px">
 				<span class="highlight">yasir4abas@gmail.com </span>
-				<a href="#"><img src="images/linkedin.png" width="24px" height="24px"></a>
+				<a href="https://www.linkedin.com/in/yasir-abbas-37a031189/"><img src="images/linkedin.png" width="24px" height="24px"></a><br>
+				<a class="highlight" href="downloads/resume.pdf" download="resume">
+					<button type="button" class="btn btn-primary"> <img style="padding: 2px;" src="images/download.png" width="32px" height="32px"> Resume</button>
+				</a>
 			</div>
 		</div>
 		<div class="projects row">
@@ -35,6 +44,11 @@
 			<div class="col-lg-4 col-sm-6 prj">
 				<a href="projects/andromeda.html">
 					<img src="images/prj-and.png">
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 prj">
+				<a href="projects/realestate.html">
+					<img src="images/prj-real.png">
 				</a>
 			</div>
 			<div class="col-lg-4 col-sm-6 prj">
@@ -53,6 +67,7 @@
 				</a>
 			</div>
 		</div>
+	
 		<div class="projects row">
 			<div class="col-md-12">
 				<h4>Technologies</h4>
@@ -98,3 +113,14 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("#header").addClass("active");
+    }
+    else {
+        $("#header").removeClass("active");
+    }
+});
+</script>
